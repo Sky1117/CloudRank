@@ -6,29 +6,7 @@ import callsData from "./assets/calls.json";
 import emailsData from "./assets/emails.json";
 const users = usersData.map((user) => user.userName);
 
-const mockAccountDetails = [
-  {
-    accountName: "Account111",
-    totalCalls: 10,
-    totalEmails: 12,
-    latestCallDate: "16/07/2024",
-    latestEmailDate: "25/07/2024",
-  },
-  {
-    accountName: "Account114",
-    totalCalls: 9,
-    totalEmails: 11,
-    latestCallDate: "05/07/2024",
-    latestEmailDate: "25/07/2024",
-  },
-  {
-    accountName: "Account123",
-    totalCalls: 5,
-    totalEmails: 2,
-    latestCallDate: "07/07/2024",
-    latestEmailDate: "15/06/2024",
-  },
-];
+
 
 function PieChart({ data, onSegmentClick, selectedSegment }) {
   let total = Object.values(data).reduce((sum, value) => sum + value, 0);
